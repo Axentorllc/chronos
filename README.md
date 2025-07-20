@@ -2,7 +2,6 @@
 
 A Frappe-UI timeline and resource management application for workload scheduling.
 
-
 ## Project Structure
 
 ```
@@ -22,17 +21,15 @@ chronos/
 ## Installation
 
 Install frontend dependencies:
-   ```bash
-   cd frontend
-   yarn install
-   ```
 
+```bash
+cd frontend
+yarn install
 ```
 
 ## Build
 
-   ```bash
-   cd frontend
-   bench build --app chronos
-   ```
+```bash
+cd frontend
+bench build --app chronos
 ```
