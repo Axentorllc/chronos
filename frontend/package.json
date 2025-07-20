@@ -1,0 +1,39 @@
+{
+  "name": "frappe-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --base=/assets/chronos/frontend/ && yarn copy-html-entry",
+    "copy-html-entry": "cp ../chronos/public/frontend/index.html ../chronos/www/frontend.html",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@vee-validate/yup": "^4.12.6",
+    "@vuepic/vue-datepicker": "^8.4.0",
+    "@vueuse/core": "^10.7.2",
+    "dayjs": "^1.11.13",
+    "feather-icons": "^4.29.1",
+    "frappe-ui": "0.1.105",
+    "socket.io-client": "^4.8.1",
+    "vee-validate": "^4.12.5",
+    "vis-timeline": "^7.7.3",
+    "vue": "^3.4.15",
+    "vue-draggable-next": "^2.2.1",
+    "vue-router": "^4.2.5",
+    "vue-toastification": "^2.0.0-rc.5",
+    "yup": "^1.4.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.2",
+    "@vitejs/plugin-vue": "^5.0.3",
+    "@vue/test-utils": "^2.4.5",
+    "autoprefixer": "^10.4.19",
+    "jsdom": "^24.0.0",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "vite": "^5.2.6",
+    "vitest": "^1.4.0"
+  }
+}

@@ -1,0 +1,190 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:configuration_name",
+ "creation": "2025-01-07 14:41:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "configuration_name",
+  "description",
+  "is_active",
+  "column_break_4",
+  "row_doctype",
+  "block_doctype",
+  "section_break_7",
+  "row_to_block_field",
+  "block_to_date_field",
+  "row_label_field",
+  "block_label_field",
+  "block_color_field",
+  "column_break_13",
+  "date_range_start_field",
+  "date_range_end_field",
+  "block_duration_field",
+  "block_status_field",
+  "block_priority_field"
+ ],
+ "fields": [
+  {
+   "fieldname": "configuration_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Configuration Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Is Active"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "row_doctype",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Row DocType",
+   "options": "DocType",
+   "reqd": 1
+  },
+  {
+   "fieldname": "block_doctype",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Block DocType",
+   "options": "DocType",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break",
+   "label": "Field Mappings"
+  },
+  {
+   "description": "Field in Block DocType that links to Row DocType",
+   "fieldname": "row_to_block_field",
+   "fieldtype": "Data",
+   "label": "Row to Block Field",
+   "reqd": 1
+  },
+  {
+   "description": "Date field in Block DocType for timeline positioning",
+   "fieldname": "block_to_date_field",
+   "fieldtype": "Data",
+   "label": "Block to Date Field",
+   "reqd": 1
+  },
+  {
+   "description": "Field to display for row labels",
+   "fieldname": "row_label_field",
+   "fieldtype": "Data",
+   "label": "Row Label Field",
+   "reqd": 1
+  },
+  {
+   "description": "Field to display for block labels",
+   "fieldname": "block_label_field",
+   "fieldtype": "Data",
+   "label": "Block Label Field",
+   "reqd": 1
+  },
+  {
+   "description": "Field to determine block colors (optional)",
+   "fieldname": "block_color_field",
+   "fieldtype": "Data",
+   "label": "Block Color Field"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Start date field for date range blocks (optional)",
+   "fieldname": "date_range_start_field",
+   "fieldtype": "Data",
+   "label": "Date Range Start Field"
+  },
+  {
+   "description": "End date field for date range blocks (optional)",
+   "fieldname": "date_range_end_field",
+   "fieldtype": "Data",
+   "label": "Date Range End Field"
+  },
+  {
+   "description": "Duration field for block sizing (optional)",
+   "fieldname": "block_duration_field",
+   "fieldtype": "Data",
+   "label": "Block Duration Field"
+  },
+  {
+   "description": "Status field for block styling (optional)",
+   "fieldname": "block_status_field",
+   "fieldtype": "Data",
+   "label": "Block Status Field"
+  },
+  {
+   "description": "Priority field for block styling (optional)",
+   "fieldname": "block_priority_field",
+   "fieldtype": "Data",
+   "label": "Block Priority Field"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-07 14:41:00.000000",
+ "modified_by": "Administrator",
+ "module": "Chronos",
+ "name": "Timeline Configuration",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Project Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
