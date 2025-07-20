@@ -31,7 +31,8 @@ Install frontend dependencies:
 
 ## Build
 
-```bash
-cd frontend
-bench build --app chronos
+   ```bash
+   cd frontend
+   bench build --app chronos
+   ```
 ```
